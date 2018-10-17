@@ -1,0 +1,37 @@
+dzial
+{
+	text-align: center;
+	display: block;
+	border: 3px solid black;
+	max-width: 60%;
+	margin: auto;
+	margin-top: 5px;
+	padding: 10px;
+
+}
+
+temat
+{
+	font-weight: 700;
+	display: block;
+}
+
+ksiazka
+{
+	display: block;
+	border: 2px solid #8E7628;
+	padding: 2px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+}
+
+
+
+tytul
+{
+	display: block;
+	
+}
+

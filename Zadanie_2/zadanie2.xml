@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<!DOCTYPE biblioteka SYSTEM "zad2.dtd">
+<biblioteka>
+    <dzial>
+    <temat>Kryminał</temat>
+    <ksiazka>
+      <autor>
+        <imie>Stephen</imie>
+        <nazwisko>King</nazwisko>
+      </autor>
+        <tytul>Zielona Mila</tytul>
+        <cena>50.00</cena><waluta> zł</waluta>
+      </ksiazka>
+      
+      <ksiazka>
+       <autor>
+        <imie>Mario</imie>
+       <nazwisko>Puzo</nazwisko>
+      </autor>
+      <tytul>Ojciec Chrzestny</tytul>
+      <cena>49.00</cena><waluta> zł</waluta>
+      </ksiazka>
+    </dzial>
+    
+    <dzial>
+    <temat>Fantasy</temat>
+      <ksiazka>
+        <autor>
+         <imie>Dmitry</imie>
+         <nazwisko>Glukhovsky</nazwisko>
+       </autor>
+      <tytul>Metro 2033</tytul>
+      <cena>25.00</cena><waluta> zł</waluta>
+      </ksiazka>
+      
+      <ksiazka>
+        <autor>
+         <imie>Andrzej</imie>
+         <nazwisko>Sapkowski</nazwisko>
+        </autor>
+      <tytul>Pani Jeziora</tytul>
+      <cena>30.00</cena><waluta> zł</waluta>
+      </ksiazka>
+    </dzial>
+
+    <dzial>
+    <temat>Nauka</temat>
+      <ksiazka>
+        <autor>
+          <imie>Andrew</imie>
+          <nazwisko>Troelsen</nazwisko>
+        </autor>
+        <autor>
+          <imie>Philip</imie>
+          <nazwisko>Japikse</nazwisko>
+        </autor>
+      <tytul>Język C#</tytul>
+      <cena>100.00</cena><waluta> zł</waluta>
+      </ksiazka>
+      
+      <ksiazka>
+        <autor>
+         <imie>Jerzy</imie>
+         <nazwisko>Grębosz</nazwisko>
+       </autor>
+      <tytul>Symfonia C++</tytul>
+      <cena>78.00</cena><waluta> zł</waluta>
+      </ksiazka>
+    </dzial>
+</biblioteka>
