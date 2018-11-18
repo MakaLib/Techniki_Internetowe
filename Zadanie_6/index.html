@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>
+		<title> AJAX </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="ajax.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<fieldset>
+				<legend id="legend">Książki</legend>
+				<form action="#">
+					<div class="buttons">
+						<input type="button" value="Dodaj rekord" onclick="showInsert()">
+					</div>
+					<div class="buttons">
+						<input type="button" value="Lista rekordów" onclick="show()">
+					</div>
+					<div style="clear: both;"></div>
+				</form>
+			</fieldset>
+		</div>
+		<div id="responseContent"></div>
+	</body>
+	

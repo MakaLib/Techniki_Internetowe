@@ -1,0 +1,26 @@
+body
+{
+	background-color: #696969;
+}
+
+#napis
+{
+	border: 2px solid #888888;
+	border-radius: 5px;
+	padding: 3px;
+}
+
+.opis
+{
+	float: left;
+	padding: 2px;
+	margin-right: 25px; 
+}
+
+#formularz
+{
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+
+}

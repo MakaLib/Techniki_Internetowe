@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<script>
+		function wykonaj()
+		{
+			var mainForm = document.getElementById("circle");
+			x = parseInt(mainForm.wspX.value);
+			y = parseInt(mainForm.wspY.value);
+			r = parseInt(mainForm.promien.value);
+			drawCanvas(x,y,r);
+			//drawSVG(x,y,r);
+		}
+
+		function drawCanvas(x,y,r)
+		{
+			var canvas = document.getElementById("canvasCircle");
+			var width = canvas.width;
+			var height = canvas.height;
+			var context = canvas.getContext("2d");
+			context.clearRect(0,0,width,height);
+			if (x > width) x = width - r;
+			if (x < 0) x = 0;
+			if (y < 0)  y = 0;
+			if (y > height) y = height - r;
+			if(x - r < 0 ) r = x;
+			else if(x+r >= width) r = width - x;
+			if(y-r < 0) r = y;
+			else if(y+r >= height) r = height - y;
+	
+			context.beginPath();
+			context.arc(x,y,r,0,2*Math.PI);
+			context.lineWidth = 1;
+			context.strokeStyle = '#ff1a1a';
+			context.stroke();
+
+			drawSVG(x,y,r);
+			
+
+		}
+
+
+		function drawSVG(x,y,r)
+		{
+			var svg = document.getElementById("svgCircle");
+			/*var height = svg.height;
+			var width = svg.width;
+
+			if (x > width) x = width - r;
+			if (x < 0) x = 0;
+			if (y < 0)  y = 0;
+			if (y > height) y = height - r;
+			if(x - r < 0 ) r = x;
+			else if(x+r >= width) r = width - x;
+			if(y-r < 0) r = y;
+			else if(y+r >= height) r = height - y;*/
+			svg.innerHTML = '<circle cx="' + x + '" cy="' + y +'" r="' + r + '" fill="blue" />';
+			
+
+		}
+
+	</script>
+
+</head>
+<body>
+	<div style="border: 2px solid blue; background-color: #6699ff; ">
+		<form name="form1" id="circle">
+			Podaj współrzędne środka: 
+			<input type="text" name="wspX">
+			<input type="text" name="wspY">
+			<br> <br> <br> Podaj promień:
+			<input type="text" name="promien"> 
+			<br><br>
+			<input type="button" value="Wykonaj" onclick="wykonaj()">
+		</form>
+	</div>
+	<div style="border: 2px solid black; width: 650px; height: 400px; margin-right: auto; margin-left: auto; float: left;">
+		<canvas id="canvasCircle" width="650" height="400"> </canvas>
+		
+	</div>
+
+	<div style="border: 2px solid black; width: 650px; height: 400px; float: right; margin-right: auto; margin-left: auto;">
+		<svg id="svgCircle" width="650" height="400"> </svg>
+	</div>
+
+
+</body>
+</html>

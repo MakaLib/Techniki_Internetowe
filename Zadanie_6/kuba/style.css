@@ -1,0 +1,21 @@
+	table {
+		border-style: solid;
+		border-color: #000000;
+	        padding: 5px; 
+		cellpadding : 5;
+		background-color: #DDDDDD;
+		margin: auto ;
+		margin-top: 30px; 
+		}
+	td { 
+		border-width: 1px; 
+		border-style: solid; 
+		border-color: #000000;
+		background-color: #99FF99;
+	        padding: 5px; 
+		}
+	tr:nth-child(odd){
+		background-color: red;
+		font-weight: bold; 
+		}
+	th {background-color: #FFFF99; }
