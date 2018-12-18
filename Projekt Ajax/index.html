@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>
+		<title> AJAX </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="ajax.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<fieldset>
+				<legend id="legend">Figury</legend>
+				<form action="#">
+					<div class="buttons">
+						<input type="button" value="Dodaj figure" onclick="showInsertForm()">
+					</div>
+					<div class="buttons">
+						<input type="button" value="Lista figur" onclick="showFigureList()">
+					</div>
+					<div style="clear: both;"></div>
+				</form>
+			</fieldset>
+		</div>
+		<div id="responseContent"></div>
+	</body>
+	

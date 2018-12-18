@@ -1,0 +1,63 @@
+body
+{
+	background-color: #7F7575;
+}
+
+#content
+{
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#legend
+{
+	border: 2px solid #AEACAC;
+	border-radius: 5px;
+	padding: 0.45em;
+}
+
+.buttons
+{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 0.4em;
+	float: left;
+}
+
+#formularz
+{
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+#main
+{
+	background-color: yellow;
+}
+
+table
+{
+	border: 3px solid black;
+	width: 70%;
+	margin-right:  auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+tr
+{
+	background-color: lightgray;
+	text-align: center;
+}
+
+tr:nth-child(odd)
+{
+	background-color: pink;
+	text-align: center;
+}
